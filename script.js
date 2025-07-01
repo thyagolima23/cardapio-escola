@@ -68,7 +68,7 @@ function exibirResultado(cardapios) {
 // Busca o IP público do usuário
 async function getUserIP() {
   try {
-    const response = await fetch('https://api.ipify.org?format=json');
+    const response = await fetch('http://api.ipify.org?format=json');
     if (!response.ok) throw new Error('Não foi possível obter o IP');
     const data = await response.json();
     return data.ip;

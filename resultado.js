@@ -1,6 +1,6 @@
 async function fetchVotosApi() {
   try {
-    const resposta = await fetch('https://api-cantina-storage.vercel.app/votacao');
+    const resposta = await fetch('http://api-cantina-storage.vercel.app/votacao');
 
     if (!resposta.ok) throw new Error('Resultado não encontrado');
 
